@@ -1,0 +1,8 @@
+Given Premises
+Bool('a') ; Bool('x')
+Bool('b') ; Bool('x')
+
+
+
+Given Conclusion
+Or(Bool('a'),Bool('b'))  ;  Bool('x')

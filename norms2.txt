@@ -1,0 +1,10 @@
+Given Premises
+Bool('a') ; And(Bool('x'), Bool('y'))
+Bool('b') ; And(Bool('x'), Bool('y'))
+Bool('c') ; And(Bool('x'), Bool('y'))
+
+
+
+
+Given Conclusion
+Or(Bool('a'),Bool('b'), Bool('c'), Bool('d'), Bool('e'))  ;  And(Bool('x'), Bool('y'))
