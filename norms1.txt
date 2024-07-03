@@ -2,9 +2,6 @@ Given Premises
 Bool('a') ; Bool('x')
 Or(Bool('a'),Bool('b')) ; Bool('y')
 
-Bool('b') ; Bool('x')
-
-Bool('b') ; And(Bool('x'),Bool('y'))
 
 
 Given Conclusion

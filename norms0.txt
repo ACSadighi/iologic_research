@@ -1,6 +1,5 @@
 Given Premises
 Bool('a') ; Bool('x')
-
 Bool('b') ; Bool('x')
 
 

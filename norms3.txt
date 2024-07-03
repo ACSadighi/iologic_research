@@ -3,8 +3,6 @@ Bool('a') ; Bool('x')
 Bool('a') ; Bool('y')
 Bool('a') ; Bool('z')
 
-Bool('a') ; Bool('q')
-Bool('a') ; Bool('r')
 
 
 

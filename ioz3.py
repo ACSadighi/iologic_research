@@ -2,8 +2,9 @@
 from z3 import *
 
 """
-Currently, io.py only handles logic with the OR
-rule. The other rules can be applied similarly.
+Change the norm file on line 32 to see how different
+rules are handled. Add, remove, or alter the norms
+as needed.
 """
 
 
@@ -29,7 +30,7 @@ prems = False
 conc = False
 prem_list = []
 conclusion = None
-fd = 'norms2.txt' # Norm file
+fd = 'norms3.txt' # Norm file
 with open(fd, 'r') as f:
     for line in f:
         if line.strip() == '':
@@ -69,7 +70,7 @@ if str(check) == 'unsat':
     print('Provable')
 else:
     # Not provable if sat
-    print('Not provable')
+    print('Not provable\n')
     # Adds norms until satisfiable
     new_norms = []
     while str(check) != 'unsat':
@@ -77,7 +78,7 @@ else:
         model = s.model()
         literals = [v for v in model]
         vals = [model[v] for v in model]
-        print(model)
+        print('Model:', model)
 
         # Looks for norms that satisfy in resolution
         new_tail = Or()
